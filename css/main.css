@@ -1,0 +1,182 @@
+body {
+  background-color: #152238;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.full-page {
+  min-height: 100vh;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+}
+
+.bg-alt {
+  background-color: #243554;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(21, 34, 56, 0.8), rgba(21, 34, 56, 0.8)), url("../img/footballmain.png") center/cover;
+  text-align: center;
+}
+
+.content-card {
+  background-color: #243554;
+  padding: 30px;
+  border-radius: 8px;
+  border-left: 4px solid #52d68a;
+  margin-bottom: 20px;
+}
+
+.content-card2 {
+  background-color: #152238;
+  padding: 30px;
+  border-radius: 8px;
+  border-left: 4px solid #52d68a;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  background-color: rgba(21, 34, 56, 0.95);
+  border-bottom: 1px solid #243554;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: #52d68a !important;
+}
+
+.player-carousel {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  padding: 40px 15px 40px 15px;
+}
+.player-carousel::-webkit-scrollbar {
+  height: 6px;
+}
+.player-carousel::-webkit-scrollbar-thumb {
+  background-color: #52d68a;
+  border-radius: 10px;
+}
+
+.player-card {
+  min-width: 320px;
+  height: 440px;
+  background-color: #243554;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  z-index: 1;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s ease, border-color 0.4s ease, z-index 0s linear;
+}
+.player-card:hover {
+  z-index: 10;
+  transform: scale(1.08);
+  border-color: #52d68a;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+}
+.player-card:hover .player-extra-info {
+  max-height: 150px;
+  opacity: 1;
+  transform: translateY(0);
+  margin-top: 15px;
+}
+.player-card:hover .player-img {
+  transform: translateX(-50%) scale(1.03);
+}
+
+.player-img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 85%;
+  width: auto;
+  z-index: 1;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  pointer-events: none;
+}
+
+.player-info {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 25px;
+  background: linear-gradient(to top, #0f1929 45%, rgba(15, 25, 41, 0.8) 75%, transparent 100%);
+}
+.player-info h3 {
+  font-family: "Bebas Neue", sans-serif;
+  color: #ffffff;
+  margin: 0;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+.player-info .player-subtitle {
+  font-size: 0.85rem;
+  color: #9a9a9a;
+  margin: 4px 0 0 0;
+  font-family: Arial, sans-serif;
+}
+.player-info .player-divider {
+  width: 35px;
+  height: 3px;
+  background-color: #52d68a;
+  margin: 12px auto;
+}
+.player-info .player-number {
+  color: #ffffff;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.player-extra-info {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  overflow: hidden;
+  text-align: left;
+}
+.player-extra-info .stat-line {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+  font-family: Arial, sans-serif;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 2px;
+}
+.player-extra-info .stat-line span {
+  color: #9a9a9a;
+}
+.player-extra-info .stat-line strong {
+  color: #52d68a;
+}
+.player-extra-info .stat-desc {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 8px;
+  line-height: 1.4;
+  font-family: Arial, sans-serif;
+}/*# sourceMappingURL=main.css.map */
