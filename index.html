@@ -185,36 +185,49 @@
       </div>
     </section>
 
-    <section id="highlights" class="full-page">
-      <div class="container">
-        <h2 class="mb-4">Highlights</h2>
-        <div class="swiper highlights-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <video muted loop playsinline>
-                <source src="/videos/test.mp4" />
-              </video>
-              <h3>Algus</h3>
-            </div>
+  <section id="highlights" class="full-page">
+  <div class="container">
+    <h2 class="mb-4">Highlights</h2>
 
-            <div class="swiper-slide">
-              <video muted loop playsinline>
-                <source src="video2.mp4" />
-              </video>
-              <h3>World Cup</h3>
-            </div>
+    <div id="highlightsCarousel" class="carousel slide" data-bs-ride="false" data-bs-touch="true">
+      
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#highlightsCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#highlightsCarousel" data-bs-slide-to="1"></button>
+      </div>
 
-            <div class="swiper-slide">
-              <video muted loop playsinline>
-                <source src="video3.mp4" />
-              </video>
-              <h3>UEFA</h3>
-            </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <video class="d-block w-100 video-fluid" muted loop autoplay playsinline>
+            <source src="/videos/test.mp4" type="video/mp4" />
+          </video>
+          <div class="carousel-caption">
+            <h3>Cristiano Ronaldo</h3>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <video class="d-block w-100 video-fluid" muted loop autoplay playsinline>
+            <source src="/videos/football.mp4" type="video/mp4" />
+          </video>
+          <div class="carousel-caption">
+            <h3>Neymar</h3>
           </div>
         </div>
       </div>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#highlightsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#highlightsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </div>
+</section>
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
