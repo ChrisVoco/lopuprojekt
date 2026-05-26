@@ -35,7 +35,7 @@ $theme-colors: map-merge(
   (
     "primary": $primary,
     "secondary": $secondary,
-    "primary2": $primary-light, 
+    "primary2": $primary-light,
     "secondary2": $secondary-light,
   )
 );
@@ -361,3 +361,24 @@ h3 {
     pointer-events: auto;
   }
 }
+
+.vahe {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-text img {
+  width: 40px;
+  height: auto;
+}
+
+.icon-text p {
+  margin: 0;
+}
+

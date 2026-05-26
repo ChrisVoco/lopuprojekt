@@ -12359,4 +12359,24 @@ h3,
 #highlights .carousel-control-next {
   z-index: 10;
   pointer-events: auto;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.vahe {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-text img {
+  width: 40px;
+  height: auto;
+}
+
+.icon-text p {
+  margin: 0;
+}
