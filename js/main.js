@@ -70,30 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // ============================================================
-  // 3. SCROLL-REVEAL — fade + slide up on section entry
-  // ============================================================
-  const revealEls = document.querySelectorAll(
-    ".full-page, .content-card2, .player-card, .stat-badge",
-  );
-
-  const revealObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("revealed");
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.12 },
-  );
-
-  revealEls.forEach((el) => {
-    el.classList.add("reveal-hidden");
-    revealObserver.observe(el);
-  });
-
-  // ============================================================
   // 4. NAVBAR TRANSPARENCY — glass effect on scroll
   // ============================================================
   const navbar = document.querySelector(".navbar");
