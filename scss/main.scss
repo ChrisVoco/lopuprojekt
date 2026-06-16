@@ -59,29 +59,6 @@ h2 {
   color: $accent;
 }
 
-// 5. SCROLL-REVEAL
-
-.reveal-hidden {
-  opacity: 0;
-  transform: translateY(32px);
-  transition:
-    opacity 0.7s ease,
-    transform 0.7s ease;
-}
-
-.revealed {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .reveal-hidden {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
-}
-
 // 6. SECTION LAYOUT
 
 .full-page {
